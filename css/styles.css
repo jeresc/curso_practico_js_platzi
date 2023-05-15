@@ -1,0 +1,144 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark: #232830;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+.inactive {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+.logo {
+  width: 10rem;
+}
+nav {
+  font-size: var(--md);
+  display: flex;
+  padding: 0 2.4rem;
+  justify-content: space-between;
+  height: 6rem;
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.navbar-left,
+.navbar-right {
+  display: flex;
+}
+.navbar-left ul,
+.navbar-right ul {
+  list-style: none;
+  padding: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.navbar-left ul {
+  margin-left: 1.2rem;
+}
+.navbar-left ul li a,
+.navbar-right ul li a {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: .8rem;
+  border-radius: .8rem;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+  text-decoration: none;
+  color: var(--hospital-green);
+  border: 1px solid var(--hospital-green);
+}
+.navbar-email {
+  color: var(--very-light-pink);
+  margin-right: 1.2rem;
+  font-size: var(--sm);
+  cursor: pointer;
+}
+
+.navbar-shopping-cart {
+  position: relative;
+}
+.navbar-shopping-cart div {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.desktop-menu {
+  width: 13rem;
+  height: auto;
+  border: 1px solid var(--very-light-pink);
+  border-radius: .6rem;
+  padding: 2rem 2rem 0 2rem;
+  position: absolute;
+  background-color: var(--white);
+  top: 5.9rem;
+  right: 6.4rem;
+}
+
+.desktop-menu ul {
+  list-style: none;
+}
+
+.desktop-menu ul li {
+  text-align: end;
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+  font-size: var(--sm);
+  font-weight: bold;
+}
+
+.desktop-menu ul li a {
+  color: var(--black);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+
+}
+.desktop-menu ul li:last-child {
+  padding-top: 2rem;
+  border-top: 1px solid var(--very-light-pink);
+}
+.desktop-menu ul li:last-child a {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: block;
+    width: 2.4rem;
+  }
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-email {
+    display: none;
+  }
+}
