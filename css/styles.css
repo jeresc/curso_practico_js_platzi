@@ -100,6 +100,7 @@ nav {
   background-color: var(--white);
   top: 5.9rem;
   right: 6.4rem;
+  z-index: 20;
 }
 
 .desktop-menu ul {
@@ -144,6 +145,7 @@ nav {
   top: 6rem;
   left: 0;
   background-color: var(--white);
+  z-index: 20;
 }
 .mobile-menu a {
   padding: 2.4rem;
@@ -177,8 +179,7 @@ nav {
   font-size: var(--sm);
 }
 
-/* Aside (shopping cart aside) */
-
+/* Aside ( Shopping Cart Aside ) */
 .shopping-cart-container {
   width: 36rem;
   padding: 2.4rem;
@@ -186,6 +187,7 @@ nav {
   right: 0;
   font-size: var(--md);
   background-color: var(--white);
+  z-index: 20;
 }
 .my-order-content {
   display: flex;
@@ -245,6 +247,9 @@ nav {
   object-fit: cover;
   object-position: center;
 }
+.shopping-cart-close:hover {
+  cursor: pointer;
+}
 .shopping-cart p:nth-child(2) {
   color: var(--very-light-pink);
 }
@@ -288,6 +293,11 @@ nav {
   border-radius: 2rem;
   object-fit: cover;
   object-position: center;
+  cursor: pointer;
+}
+.product-card .product-image:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0,0.2);
+  transition: box-shadow 0.2s ease-in-out;
 }
 .product-info {
   margin-top: 1.6rem;
@@ -320,6 +330,7 @@ nav {
   right: 0;
   font-style: var(--md);
   background-color: var(--white);
+  z-index: 20;
 }
 .product-detail-close {
   position: absolute;
@@ -333,7 +344,7 @@ nav {
   z-index: 20;
   box-sizing: content-box;
 }
-.product-detail-close:hover{
+.product-detail-close:hover {
   cursor: pointer;
 }
 .product-detail > img:nth-child(2) {
