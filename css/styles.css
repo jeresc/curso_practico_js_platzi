@@ -403,6 +403,18 @@ nav {
     background: var(--hospital-green);
 }
 
+.lock {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+@media (max-width: 742px) {
+  .navbar-email {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .menu {
     display: block;
