@@ -138,7 +138,6 @@ productList.push({
 })
 
 
-
 function renderProducts(arr) {
 
   for (const product of arr) {
@@ -149,7 +148,7 @@ function renderProducts(arr) {
     productImg.classList.add('product-image')
     productImg.setAttribute('src', product.image);
     productImg.addEventListener('click', openProductDetailAside)
-    productImg.addEventListener('click', () => {renderProductDetail(product)})
+    productImg.addEventListener('click', () => { renderProductDetail(product)} )
 
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');
